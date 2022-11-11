@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *** FontAwesome Link *** -->
+    <script src="https://kit.fontawesome.com/ab9ef61c0d.js" crossorigin="anonymous"></script>
+    <!-- *** CSS Link *** -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock-Paper-Scissors with Javascript</title>
+</head>
+<body>
+    <!-- *** Navbar Start *** -->
+    <nav>
+        <ul>
+            <li id="time">
+                <i class="fa-solid fa-hourglass-half"></i>
+            </li>
+            <li id="sound">
+                <i class="fa-solid fa-volume-off fa-shake"></i>
+            </li>
+            <li id="wifi">
+                <i class="fa-solid fa-wifi fa-fade"></i>
+            </li>
+            <li id="signal">
+                <i class="fa-solid fa-battery-three-quarters fa-beat"></i>
+            </li>
+        </ul>
+    </nav>
+    <!-- *** Navbar End *** -->
+
+    <header>
+        <h1>Rock, Paper, or Scissors?</h1>
+    </header>
+
+    <!-- *** Content Start *** -->
+    <div class="page">
+        <h1 class="title">You against The Machine</h1>
+        <h4 class="title">Get the 5 points first and beat the machine. Best of luck!</h4>
+        <div class="score">
+            <ul class = 'scoreNumber'>
+                <li id = 'playerNumber'>0</li>
+                <li id = 'computerNumber'>0</li>
+            </ul>
+            <ul class = 'scoreTable'>
+                <li id = 'scorePlayer'>You</li>
+                <li id = 'scoreComputer'>Machine</li>
+            </ul>
+            <p id = 'outcome' ></p>
+        </div>
+        <div class="images">
+            <input type="image" id = 'Rock' src="img/rock.png" onclick="play(this.id)">
+            <input type="image" id = 'Paper' src="img/paper.png" onclick="play(this.id)">
+            <input type="image" id = 'Scissors' src="img/scissors.png" onclick="play(this.id)">   
+        </div>
+        <input type="button" value = 'Replay' id = 'reset' onclick="window.location.reload()">
+    </div>
+    <!-- *** Content End *** -->
+
+    <!-- *** Footer Start *** -->
+    <footer>
+        <h6>
+            <i class="fa-solid fa-copyright"></i>
+            Designed and coded by Idalyn Luceres | KodeGo Student 2022
+        </h6>
+    </footer>
+    <!-- *** Footer End *** -->
+
+     <!-- *** JS Files *** -->
+     <script src="js/script.js"></script>   
+</body>
+</html>

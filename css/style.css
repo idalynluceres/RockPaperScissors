@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Poor+Story&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpnBcKIRhnYeboV4JvGL09IG3RN572fHGwow&usqp=CAU');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/** NAVBAR **/
+nav
+{
+    font-family: 'Poor Story', cursive;
+    border-bottom: 1px solid gray;
+    background-image: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhaW4lMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+}
+nav ul
+{
+    display: flex;
+    justify-content: end;
+}
+nav ul li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bolder;
+}
+#time
+{
+    margin-right: 1480px;
+}
+#sound
+{
+    color: grey;
+}
+#wifi
+{
+    color: green;
+}
+#signal
+{
+    color: grey;
+}
+header h1
+{
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: white;
+}
+/** CONTENT **/
+.page 
+{
+    font-family: 'Chakra Petch', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+h1 
+{
+    font-size: 40px;
+    margin: 0;
+    color: darkorchid;
+}
+h4 
+{
+    font-size: 20px;
+    margin: 5px;
+    color: rgb(183, 88, 231);
+}
+.score 
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: blueviolet;
+}
+input 
+{
+    width: 100px;
+    height: 100px;
+    margin-inline: 80px;
+}
+.button:hover 
+{
+    position: relative;
+}
+.scoreNumber 
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 2px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+.scoreNumber li 
+{
+    margin-inline: 150px;
+    font-size: 70px;
+}
+.scoreTable 
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 0px;
+}
+.scoreTable li 
+{
+    margin-inline: 90px;
+    font-size: large;
+    color: white;
+    background-color:rgb(194, 116, 236);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#outcome 
+{
+    position: flex;
+    font-size: x-large;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.score #records
+{
+    height: 200px;
+}
+.images 
+{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.images input[type=image]:hover
+{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+input[type=button] 
+{
+    position: absolute;
+    bottom: 70px;
+    right: 75px;
+    margin: 0px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    background: rgb(202, 124, 202);
+    font-size: medium;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+input[type=button]:hover 
+{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    cursor: pointer;
+}
+/** FOOTER **/
+footer
+{
+    background-image: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhaW4lMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+}
+footer h6
+{
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+    border-top: 1px solid gray;
+    margin-top: auto;
+    padding: 20px;
+    font-size: 20px;
+}
+footer h6 i
+{
+    color: purple;
+}
+/** MEDIA QUERY **/
+@media (max-width: 540px) 
+{
+    nav ul li
+    {
+        font-size: 15px;
+    }
+    #time
+    {
+        margin-right: 300px;
+    }
+    header h1
+    {
+        font-size: 30px;
+    }
+    .page 
+    {
+        width: 100%;
+    }
+    h1 
+    {
+        font-size: 20px;
+    }
+    h4 
+    {
+        font-size: 15px;
+    }
+    .scoreNumber 
+    {
+        margin-top: 40px;
+    }
+    .scoreNumber li 
+    {
+        margin-inline: 90px;
+        font-size: 50px;
+    }
+    .scoreTable li 
+    {
+        margin-inline: 30px;
+        font-size: medium;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #outcome 
+    {
+        font-size: medium;
+    }
+    input[type=image] 
+    {
+        width: 30%;
+        height: 50px;
+    }
+    input[type=button] 
+    {
+        bottom: 170px;
+        right: 45px;
+        width: 60px;
+        height: 60px;
+        font-size: small;
+        font-weight: bold;
+    }
+}
